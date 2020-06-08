@@ -1,8 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This is a simple image slider based on material-ui
+This is a simple image slider based on material-ui.
+
 to use it, change the values in src/components/tabContent.js
-![](screenshot.png?raw=true)
+![](public/screenshot.png?raw=true)
 ## Available Scripts
 
 In the project directory, you can run:

@@ -1,7 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+import { Tabs, Tab } from '@material-ui/core';
 
 const color = "linear-gradient(#bbdefb,#fafafa)";
 export const AltTabs = withStyles({
@@ -9,17 +8,17 @@ export const AltTabs = withStyles({
         borderRadius: "5px",
         backgroundImage: color
     },
-    indicator : {
-        backgroundColor : '#fafafa'
+    indicator: {
+        backgroundColor: '#fafafa'
     }
-    
+
 })(Tabs);
 export const AltTab = withStyles((theme) => ({
     root: {
         textTransform: 'none',
         minWidth: 350,
         minHeight: 400,
-        opacity : 0.8,
+        opacity: 0.8,
         marginRight: theme.spacing(6),
         fontFamily: [
             '-apple-system',
@@ -35,11 +34,7 @@ export const AltTab = withStyles((theme) => ({
         ].join(','),
         '&:hover': {
             opacity: 1,
-        },
-        '&$selected': {
-        },
-        '&:focus': {
-        },
+        }
     },
     selected: {},
 }))((props) => <Tab disableRipple {...props} />);
